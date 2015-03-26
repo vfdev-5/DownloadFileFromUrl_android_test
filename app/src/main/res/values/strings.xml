@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DownloadFileFromURL</string>
+
+    <string name="file_download_notification">Download from url : </string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+
+
+</resources>

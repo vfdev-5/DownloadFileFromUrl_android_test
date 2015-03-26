@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="2dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@android:drawable/stat_sys_download"
+        android:layout_gravity="center"
+        android:background="#111111"
+        android:scaleType="center"
+        android:adjustViewBounds="false"
+        android:layout_weight="7" />
+
+    <!--ImageView
+        android:layout_width="2 dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView2"
+        android:src="@android:color/white"
+        android:layout_gravity="center_vertical" /-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:measureWithLargestChild="false"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/file_download_notification"
+            android:id="@+id/contentTile"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="url"
+            android:id="@+id/notification_url"
+            android:singleLine="true"
+            android:layout_weight="1" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/notification_progressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notification_close"
+        android:layout_weight="7"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:background="#111111" />
+
+</LinearLayout>
